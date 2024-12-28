@@ -80,6 +80,13 @@ class _ExpensesState extends State<Expenses> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('TrackX'),
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 15),
+          child: Image.asset(
+            'images/icon1.png',
+          ),
+        ),
+        leadingWidth: 50,
         actions: [
           IconButton(
             onPressed: _openAddExpenseOverlay,
